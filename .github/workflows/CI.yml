@@ -7,17 +7,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NODE_VERSION: 14.17.3
+      NODE_VERSION: '14'
 
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-              with:
-                  node-version: 14.17.3
-                  
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+        cache: 'npm'
     - name: Install node.js packages
-              run: npm install  
-    - name: Run tests and attempt building
       run: npm install
 
   docker-build:
