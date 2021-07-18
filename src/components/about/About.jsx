@@ -11,8 +11,10 @@ export default function About({about}) {
                             <img className="w-32 h-32 rounded-full mx-auto" src={about.picture} alt={about.title}/> 
                         </div>
                         <div className="md:flex-1">
-                            <div className="py-8 text-base space-y-4 text-black sm:text-lg sm:leading-7 text-justify">
-                            <p>{about.about}</p>
+                            <div className="py-4 text-black text-sm md:text-base sm:leading-7">
+                                {about.about.map((element) => (
+                                    <p key={element} className="text-justify"> {element}</p>
+                                ))}
                             </div>
                         </div>
                     </div>

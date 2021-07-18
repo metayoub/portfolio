@@ -3,9 +3,16 @@ const ang = {
         title: 'Ayoub METWALLI',
         logo: 'AyoubMetwalli',
         subtitle: 'Technical Leader, Full Stack Developer & Technology Enthusiast',
-        resume: '',
-        picture: '../../user.png',
-        about: 'Andente itaque viam fatorum sorte tristissima, qua praestitutum erat eum vita et imperio spoliari, itineribus interiectis permutatione iumentorum emensis venit Petobionem oppidum Noricorum, ubi reseratae sunt insidiarum latebrae omnes, et Barbatio repente apparuit comes, qui sub eo domesticis praefuit, cum Apodemio agente in rebus milites ducens, quos beneficiis suis oppigneratos elegerat imperator certus nec praemiis nec miseratione ulla posse deflecti.',
+        resume: '/Ayoub_Metwalli_resume.pdf',
+        picture: '../../user.jfif',
+        about: [ 'I\'ve got my first PC when I was 11 years old then I broke it after few days.',
+            'After weeks, I found some php scripts (At this time I had no clue what that was).',
+            'I looked for some tutorials on how to use and install them on Free Hosting.',
+            'I was fascinated and I started looking what those script are.',
+            'I finally got it, my first website which show Hello World when you open it with Internet Explorer.',
+            'I started learning HTML to make simple website or to modify scripts.',
+            'Today I am a Technical Lead and a Software Engineer and this was the beginning of my journey.'
+        ]
     },
     footer: {
         title: 'Ayoub Metwalli',
@@ -71,7 +78,7 @@ const ang = {
             school: 'High National School for Computer Science and Systems Analysis',
             where: 'Rabat/ Morocco',
             year: 'From September 2017 to July 2020',
-            keys: 'Software engineering, Data Structures, Web Application Architecture, Algorithms, Parallel Programming, DataBase, Modern Programming Practice, Computer Science'
+            keys: 'Pricing, Financial Modeling, Financial Risk, Derivative (Finance), Financial Engineering, Real Options Valuation, Risk Management',
         },
         {
             id: 2,
@@ -87,7 +94,7 @@ const ang = {
             school: 'CPGE Moulay Abdellah',
             where: 'Safi / Morocco',
             year: 'From September 2011 to Mai 2013',
-            keys: 'Two-year highly selective classes to prepare for the competitive exams to the "Grandes Ecoles'
+            keys: 'Two-year highly selective classes to prepare for the competitive exams to the "Grandes Ecoles"'
         }
     ],
     skill: [

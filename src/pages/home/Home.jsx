@@ -22,7 +22,7 @@ export default function Home() {
             <Experience experience={ang.experience} />
             <Education education={ang.education} />
             <Skill skill={ang.skill}/>
-            <Contact />
+            <Contact contact={ang.about}/>
             <Footer footer={ang.footer} />
         </div>
     );
