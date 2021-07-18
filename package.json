@@ -36,6 +36,8 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
