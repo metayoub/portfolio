@@ -3,7 +3,7 @@ const ang = {
         title: 'Ayoub METWALLI',
         logo: 'AyoubMetwalli',
         subtitle: 'Technical Leader, Full Stack Developer & Technology Enthusiast',
-        resume: '.git push -f origin branch_name/Ayoub_Metwalli_resume.pdf',
+        resume: './Ayoub_Metwalli_resume.pdf',
         picture: './user.jfif',
         about: [ 'I\'ve got my first PC when I was 11 years old then i broke it after few days.',
             'After weeks, i found some php scripts (At this time i had no clue what that was).',

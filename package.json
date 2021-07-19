@@ -1,6 +1,7 @@
 {
-  "name": "my-app",
+  "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://ayoubmetwalli.com",
   "private": true,
   "dependencies": {
     "@craco/craco": "^5.9.0",
