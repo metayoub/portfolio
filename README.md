@@ -73,6 +73,7 @@ If you can help us with these. Please don't hesitate to open an [pull request](h
 # TODO
 - Add SEO.
 - Add Dark Mode.
+- Support Theme and color scheme.
 - Support Multiple languages.
 - Add Blog template.
 - Add tests.
