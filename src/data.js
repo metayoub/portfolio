@@ -2,6 +2,7 @@ const ang = {
     about : {
         title: 'Ayoub METWALLI',
         logo: 'AyoubMetwalli',
+        website: 'https://ayoubmetwalli.com/',
         subtitle: 'Technical Leader, Full Stack Developer & Technology Enthusiast',
         resume: './Ayoub_Metwalli_resume.pdf',
         picture: './user.jfif',
@@ -13,6 +14,17 @@ const ang = {
             'I started learning HTML to make simple website or to modify scripts.',
             'Today I am a Technical Lead and a Software Engineer and this was the beginning of my journey.'
         ]
+    },
+    seo: {
+        title: 'Ayoub METWALLI\'s Portfolio',
+        description: 'Technical Leader, Full Stack Developer & Technology Enthusiast',
+        og: {
+            title: 'Ayoub METWALLI Portfolio',
+            type: 'website',
+            url: 'https://ayoubmetwalli.com/',
+            description: 'Technical Leader, Full Stack Developer & Technology Enthusiast',
+            site_name: 'Ayoub METWALLI'
+        }
     },
     footer: {
         title: 'Ayoub Metwalli',
@@ -29,15 +41,15 @@ const ang = {
             location: 'Rabat/ Maroc',
             company: '4D Maroc',
             description: [
-                'Analyze clients needs and find solutions to serve them',
-                'Check that applications are updated and the code is clean and good',
-                'Train and help technical personnel',
+                'Analyze clients needs and find solutions to serve them.',
+                'Check that applications are updated and the code is clean and good.',
+                'Train and help technical personnel.',
                 'Guide the Devs through technical issues and challenges.',
-                'Help hirring technical personnel',
-                'Identify areas of improvement',
-                'Resolve high priority issues',
-                'Search new technologies, tools and concepts',
-                'Customize solutions and improve business processes, operations and profitability'
+                'Help hirring technical personnel.',
+                'Identify areas of improvement.',
+                'Resolve high priority issues.',
+                'Search new technologies, tools and concepts.',
+                'Customize solutions and improve business processes, operations and profitability.'
             ]
         },
         {
@@ -47,11 +59,11 @@ const ang = {
             location: 'Paris/ France',
             company: '4D /  Malakoff Humanis',
             description: [
-                'Contributor of a ten-member agile team for an assurance product application',
-                'Developed additional features using 4D, JAVA and Angular',
-                'Wrote data processing batchs in 4D',
-                'Followed Scrum/Agile methodology with daily meetings to keep track of the progress and issues pertaining to the projects',
-                'Resolved high priority production issues'
+                'Contributor of a ten-member agile team for an assurance product application.',
+                'Developed additional features using 4D, JAVA and Angular.',
+                'Wrote data processing batchs in 4D.',
+                'Followed Scrum/Agile methodology with daily meetings to keep track of the progress and issues pertaining to the projects.',
+                'Resolved high priority production issues.'
             ]
         },
         {
@@ -61,13 +73,13 @@ const ang = {
             location: 'Rabat/ Morroco',
             company: '4D Maroc',
             description: [
-                'Well-versed in all phases in all phases of Software Development Lifecycle includingAnalysis, Design, Coding, Debugging, Testing with good knowledge of Data structure and Algorithms',
-                'Developed back-end web applications and APIs using 4D',
-                'Developed dynamic front-end applications using Angular or React',
-                'Developed custom Docker images for test automation integration',
-                'Developed Shell Scripts to automate repeated manual steps for different data setups and deployments',
-                'Consumed web APIs from third-party sites like AzureCloud, GoogleMaps',
-                'Proven success engineering customized solutions improving business processes, operations and profitability'
+                'Well-versed in all phases in all phases of Software Development Lifecycle includingAnalysis, Design, Coding, Debugging, Testing with good knowledge of Data structure and Algorithms.',
+                'Developed back-end web applications and APIs using 4D.',
+                'Developed dynamic front-end applications using Angular or React.',
+                'Developed custom Docker images for test automation integration.',
+                'Developed Shell Scripts to automate repeated manual steps for different data setups and deployments.',
+                'Consumed web APIs from third-party sites like AzureCloud, GoogleMaps.',
+                'Proven success engineering customized solutions improving business processes, operations and profitability.'
             ]
         }
     ],

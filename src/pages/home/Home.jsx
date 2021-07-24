@@ -7,6 +7,7 @@ import About from "../../components/about/About";
 import Experience from "../../components/experience/Experience";
 import Education from "../../components/education/Education";
 import Skill from "../../components/skill/Skill";
+import SeoHeader from "../../components/seo/Seo";
 import { ang } from "../../data";
 
 // import useTheme from "../../hooks/useTheme";
@@ -16,6 +17,7 @@ export default function Home() {
 
     return (
         <div className="min-h-screen bg-white flex flex-col">
+            <SeoHeader seo={ang.seo}/>
             <Header about={ang.about}/>
             <Resume about={ang.about} />
             <About  about={ang.about}/>

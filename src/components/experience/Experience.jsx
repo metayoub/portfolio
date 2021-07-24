@@ -19,7 +19,7 @@ export default function Experience({ experience }) {
                         <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-11/12 sm:w-12/12 md:w-5/12 px-3 py-3 md:transform md:hover:scale-105 md:transition md:duration-300">
                             <h5 className="mb-1 text-gray-500 text-md text-center">{item.year}</h5>
                             <h3 className="mb-2 font-bold text-gray-800 text-xl">{item.role}</h3>
-                            <h5 className="mb-2 font-semibold text-gray-600 text-lg">{item.company}</h5>
+                            <h5 className="mb-2 font-semibold text-gray-600 text-lg">{item.company} ({item.location})</h5>
                             <ul className="leading-loose text-xs tracking-tight text-justify text-gray-900 text-opacity-100 list-disc list-inside">
                             {item.description.map((element) => (
                                 <li key={element}> {element}</li>
