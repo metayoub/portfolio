@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
     UserIcon,
@@ -39,15 +39,33 @@ const menu = [
 ]
 
 export default function Header({about}) {
+  const [isDark, setIsDark] = useState(localStorage.theme === 'dark');
+  const toggleTheme = () => {
+    if(localStorage.theme === undefined){
+      localStorage.theme = 'light';
+    }
+    if (localStorage.theme === 'dark' )  {
+      localStorage.theme = 'light' 
+    } else {
+        localStorage.theme = 'dark';
+    }
+    setIsDark(localStorage.theme === 'dark');
+    if (isDark || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }
+
   return (
     <Popover className="relative">
       {({ open }) => (
         <>
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+            <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="#home" className="logo">
-                    <span className="text-base logo-name text-gray-500 hover:text-gray-900">{about.logo}</span>
+                    <span className="text-base logo-name text-gray-500 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white">{about.logo}</span>
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
@@ -61,11 +79,23 @@ export default function Header({about}) {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="text-base font-medium text-gray-500 hover:text-gray-900"
+                        className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white"
                       >
                         {item.name}
                       </a>
                 ))}
+                <button type="button" onClick={() => toggleTheme()} className="text-base font-medium text-gray-500 hover:text-gray-900 animate-wiggle dark:text-gray-200 dark:hover:text-white">
+                  {
+                    isDark ? 
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                    :
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                  }
+                </button>    
               </nav>
             </div>
           </div>

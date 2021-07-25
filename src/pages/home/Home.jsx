@@ -16,7 +16,7 @@ export default function Home() {
     // const [, { toggle }] = useTheme();
 
     return (
-        <div className="min-h-screen bg-white flex flex-col">
+        <div className="min-h-screen bg-white dark:bg-gray-900 flex flex-col">
             <SeoHeader seo={ang.seo}/>
             <Header about={ang.about}/>
             <Resume about={ang.about} />

@@ -38,7 +38,7 @@ const ang = {
             id: 1,
             role: 'Technical lead',
             year: 'Since 07/2021',
-            location: 'Rabat/ Maroc',
+            location: 'Rabat/ Morocco',
             company: '4D Maroc',
             description: [
                 'Analyze clients needs and find solutions to serve them.',
@@ -70,7 +70,7 @@ const ang = {
             id: 3,
             role: 'Full Stack Developer',
             year: 'From 11/2016 to 06/2021',
-            location: 'Rabat/ Morroco',
+            location: 'Rabat/ Moroccoo',
             company: '4D Maroc',
             description: [
                 'Well-versed in all phases in all phases of Software Development Lifecycle includingAnalysis, Design, Coding, Debugging, Testing with good knowledge of Data structure and Algorithms.',
