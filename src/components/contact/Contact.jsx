@@ -34,7 +34,7 @@ export default function Contact({ contact }) {
     };
 
     return (
-        <div id="contact" className="w-full h-screen bg-gray-50 dark:bg-gray-800 flex flex-col justify-center  items-center mx-auto">
+        <div id="contact" className="w-full min-h-screen bg-gray-50 dark:bg-gray-800 flex flex-col justify-center  items-center mx-auto">
             <form onSubmit={onSubmit} className="w-full md:w-3/4 lg:w-3/6 p-4">
                 <div className="p-3">
                     <p className="w-full flex justify-center text-2xl text-gray-800 dark:text-gray-200 font-bold "  >Get in Touch </p>
