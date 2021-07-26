@@ -10,11 +10,7 @@ import Skill from "../../components/skill/Skill";
 import SeoHeader from "../../components/seo/Seo";
 import { ang } from "../../data";
 
-// import useTheme from "../../hooks/useTheme";
-
 export default function Home() {
-    // const [, { toggle }] = useTheme();
-
     return (
         <div className="min-h-screen bg-white dark:bg-gray-900 flex flex-col">
             <SeoHeader seo={ang.seo}/>

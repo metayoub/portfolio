@@ -64,7 +64,7 @@ To use EmailJS to receive mails
 - [headlessui](https://headlessui.dev/)
 - [emailjs](https://www.emailjs.com/)
 
-# License 📄
+# License
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 # Contributing
