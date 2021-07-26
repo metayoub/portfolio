@@ -71,7 +71,7 @@ export default function Header({about}) {
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
-                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
+                <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
                   <span className="sr-only">Open menu</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -117,16 +117,16 @@ export default function Header({about}) {
               static
               className="absolute top-0 inset-0 p-2 transition transform origin-top-right md:hidden h-screen"
             >
-              <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-y-2 divide-gray-50 h-screen bg-white">
+              <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-y-2 divide-gray-50 h-screen bg-white dark:bg-gray-800">
                 <div className="pt-5 pb-6 px-5">
                   <div className="flex items-center justify-between">
                     <div>
                       <a href="#home" className="logo">
-                        <span className="text-base logo-name text-gray-500 hover:text-gray-900">{about.logo}</span>
+                        <span className="text-base logo-name text-gray-500 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white">{about.logo}</span>
                       </a>
                     </div>
                     <div className="-mr-2">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
+                      <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 dark:text-gray-200 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
                         <span className="sr-only">Close menu</span>
                         <XIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -138,10 +138,10 @@ export default function Header({about}) {
                         <a
                           key={item.name}
                           href={item.href}
-                          className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                          className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-500"
                         >
-                          <item.icon className="flex-shrink-0 h-6 w-6 text-gray-500 hover:text-gray-900" aria-hidden="true" />
-                          <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
+                          <item.icon className="flex-shrink-0 h-6 w-6 text-gray-500 dark:text-gray-200" aria-hidden="true" />
+                          <span className="ml-3 text-base font-medium text-gray-900 dark:text-gray-200">{item.name}</span>
                         </a>
                       ))}
                       
